@@ -593,10 +593,8 @@ body, html {
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
- 
-      <footer class="bg-green-900 text-white py-12">
+<!-- Footer -->
+<footer class="bg-green-900 text-white py-12">
   <div class="max-w-6xl mx-auto px-6">
     <!-- Main footer content -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
@@ -676,7 +674,7 @@ body, html {
         </ul>
       </div>
 
-      <!-- Contact & Hours -->
+      <!-- Contact Info -->
       <div>
         <h4 class="font-bold mb-4 text-green-300">Contact Info</h4>
         <ul class="space-y-3">
@@ -705,22 +703,21 @@ body, html {
 
     <!-- Divider -->
     <div class="border-t border-green-800 pt-6 mt-4">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <!-- Copyright -->
-        <p class="text-green-200 text-sm mb-4 md:mb-0">
-          © 2025 Biology E-LAB. All rights reserved.
-        </p>
-        
-        <!-- Additional links -->
-        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-          <a href="#" class="text-green-200 hover:text-white text-sm transition">Careers</a>
-          <a href="#" class="text-green-200 hover:text-white text-sm transition">Support</a>
-          <a href="#" class="text-green-200 hover:text-white text-sm transition">Blog</a>
-          <a href="#" class="text-green-200 hover:text-white text-sm transition">Educational Partners</a>
-        </div>
+      <!-- Developer and copyright -->
+      <div class="flex flex-col md:flex-row justify-between items-center mb-4">
+        <p class="text-green-200 text-sm">© <span id="footerYear"></span> Biology E-LAB. All rights reserved.</p>
+        <p class="text-green-200 text-sm">Designed & Developed by Mr. Alchemy</p>
       </div>
-      
-      <!-- Back to top button -->
+
+      <!-- Additional links -->
+      <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+        <a href="#" class="text-green-200 hover:text-white text-sm transition">Careers</a>
+        <a href="#" class="text-green-200 hover:text-white text-sm transition">Support</a>
+        <a href="#" class="text-green-200 hover:text-white text-sm transition">Blog</a>
+        <a href="#" class="text-green-200 hover:text-white text-sm transition">Educational Partners</a>
+      </div>
+
+      <!-- Back to top -->
       <div class="text-center mt-6">
         <a href="#top" class="inline-block bg-green-800 hover:bg-green-700 text-white px-4 py-2 rounded-full transition">
           <i class="fas fa-arrow-up mr-2"></i>Back to Top
@@ -729,5 +726,15 @@ body, html {
     </div>
   </div>
 </footer>
+
+<!-- Dynamic Year Script -->
+<script>
+  const publishedYear = 2024;
+  const currentYear = new Date().getFullYear();
+  const yearText = (currentYear === publishedYear) 
+    ? `${publishedYear}` 
+    : `${publishedYear} - ${currentYear}`;
+  document.getElementById("footerYear").textContent = yearText;
+</script>
 </body >
 </html>
