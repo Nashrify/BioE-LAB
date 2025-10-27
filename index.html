@@ -246,34 +246,35 @@ body, html {
     </a>
   </div>
 
-<div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 border border-gray-100">    
+
+<div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 border border-gray-100 max-w-md mx-auto sm:max-w-lg md:max-w-xl lg:max-w-2xl">    
   <div class="bg-green-100 p-4 flex justify-center">    
-    <img src="HIV-AIDS-ARTICLE.jpg" alt="HIV & AIDS ARTICLE" class="h-32 object-contain" />    
+    <img src="HIV-AIDS-ARTICLE.jpg" alt="HIV & AIDS ARTICLE" class="h-32 sm:h-40 md:h-48 object-contain" />    
   </div>    
 
   <div class="p-5">    
-    <div class="flex justify-between items-start mb-2">    
-      <h3 class="font-bold text-lg text-green-800">HIV & AIDS ARTICLE</h3>    
-      <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Health Education Resource</span>    
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 space-y-2 sm:space-y-0">    
+      <h3 class="font-bold text-lg text-green-800 text-center sm:text-left">HIV & AIDS ARTICLE</h3>    
+      <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded self-center sm:self-start">Health Education Resource</span>    
     </div>    
 
-    <p class="text-sm text-gray-600 mb-4">
+    <p class="text-sm text-gray-600 mb-4 text-center sm:text-left">
       An insightful article on HIV & AIDS awareness, prevention, and education.
     </p>    
 
-    <div class="flex justify-between items-center space-x-3">    
-      <p class="text-sm text-gray-500">PDF | 10.5MB</p>    
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center space-y-3 sm:space-y-0 sm:space-x-3">    
+      <p class="text-sm text-gray-500 text-center sm:text-left">PDF | 10.5MB</p>    
 
-      <div class="flex space-x-2">
+      <div class="flex justify-center sm:justify-end space-x-2">
         <!-- View button: opens document in browser -->
         <a href="HIV&AIDS ARTICLE.pdf" target="_blank"
-           class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition flex items-center">
+           class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition flex items-center justify-center text-sm w-full sm:w-auto">
           <i class="fas fa-eye mr-2"></i> View
         </a>
 
         <!-- Optional: still allow download -->
         <a href="HIV&AIDS ARTICLE.pdf" download
-           class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition flex items-center">
+           class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition flex items-center justify-center text-sm w-full sm:w-auto">
           <i class="fas fa-download mr-2"></i> Download
         </a>
       </div>
