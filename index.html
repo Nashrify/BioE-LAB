@@ -246,25 +246,41 @@ body, html {
     </a>
   </div>
 
-<div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 border border-gray-100">  
-  <div class="bg-green-100 p-4 flex justify-center">  
-    <img src="HIV-AIDS-ARTICLE.jpg" alt="HIV & AIDS ARTICLE" class="h-32 object-contain" />  
-  </div>  
-  <div class="p-5">  
-    <div class="flex justify-between items-start mb-2">  
-      <h3 class="font-bold text-lg text-green-800">HIV & AIDS ARTICLE</h3>  
-      <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Health Education Resource</span>  
-    </div>  
-    <p class="text-sm text-gray-600 mb-4">An insightful article on HIV & AIDS awareness, prevention, and education.</p>  
-    <div class="flex justify-between items-center">  
-      <p class="text-sm text-gray-500">PDF | 10.5MB</p>  
-      <a href="HIV&AIDS ARTICLE.pdf" download  
-        class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition flex items-center">  
-        <i class="fas fa-download mr-2"></i> Download  
-      </a>  
-    </div>  
-  </div>  
+<div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 border border-gray-100">    
+  <div class="bg-green-100 p-4 flex justify-center">    
+    <img src="HIV-AIDS-ARTICLE.jpg" alt="HIV & AIDS ARTICLE" class="h-32 object-contain" />    
+  </div>    
+
+  <div class="p-5">    
+    <div class="flex justify-between items-start mb-2">    
+      <h3 class="font-bold text-lg text-green-800">HIV & AIDS ARTICLE</h3>    
+      <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Health Education Resource</span>    
+    </div>    
+
+    <p class="text-sm text-gray-600 mb-4">
+      An insightful article on HIV & AIDS awareness, prevention, and education.
+    </p>    
+
+    <div class="flex justify-between items-center space-x-3">    
+      <p class="text-sm text-gray-500">PDF | 10.5MB</p>    
+
+      <div class="flex space-x-2">
+        <!-- View button: opens document in browser -->
+        <a href="HIV&AIDS ARTICLE.pdf" target="_blank"
+           class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition flex items-center">
+          <i class="fas fa-eye mr-2"></i> View
+        </a>
+
+        <!-- Optional: still allow download -->
+        <a href="HIV&AIDS ARTICLE.pdf" download
+           class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition flex items-center">
+          <i class="fas fa-download mr-2"></i> Download
+        </a>
+      </div>
+    </div>    
+  </div>    
 </div>
+
   
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 border border-gray-100">
